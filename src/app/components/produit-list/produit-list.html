@@ -1,0 +1,8 @@
+<h2>Input: Produits</h2>
+
+<div class="grille">
+    @for(produitItem of produits ; track produitItem.ref){
+        <cam-produit-card [produit]="produitItem"/>
+    }
+    <p>Inserer les produits ici</p>
+</div>

@@ -1,0 +1,12 @@
+<p>bureau-vote-list works!</p>
+
+<cam-bureau-vote (aVote)="onVoteRecu($event)"/>
+<cam-bureau-vote (aVote)="onVoteRecu($event)"/>
+<cam-bureau-vote/>
+
+ <table>
+    <tr> <td>Pour</td> <td><b>{{pour}}</b></td> </tr>
+    <tr> <td>Contre</td> <td><b>{{contre}}</b></td> </tr>
+    <tr> <td>Abstention</td> <td><b>{{abstention}}</b></td> </tr>
+    <tr> <td>Total</td> <td><b>{{pour + contre + abstention}}</b></td> </tr>
+ </table>

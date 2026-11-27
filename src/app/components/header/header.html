@@ -1,0 +1,15 @@
+<div>
+    <header [style.--couleur-ombre]="preferenceService.couleurPreferee()">
+        <img src="/beard.svg" alt="logo" width="30px" height="30px">
+        <a routerLink="/textinterpolation" routerLinkActive="active">Text-interpolation</a>
+        <a routerLink="/bindings" routerLinkActive="active">Bindings</a>
+        <a routerLink="/control-flow" routerLinkActive="active">ControlFlow</a>
+        <a routerLink="/exos-bindings" routerLinkActive="active">ExosBindings</a>
+        <a routerLink="/signals" routerLinkActive="active">Signals</a>
+        <a routerLink="/exos-signals" routerLinkActive="active">ExosSignals</a>
+        <a routerLink="/produit-list" routerLinkActive="active">Input</a>
+        <a routerLink="/bureau-vote-list" routerLinkActive="active">Output</a>
+        <a routerLink="/pipes" routerLinkActive="active">Pipes</a>
+    </header>
+    <p>Voici la valeur de préférence récupérée depuis le service {{preferenceService.couleurPreferee()}}</p>
+</div>

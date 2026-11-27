@@ -1,0 +1,13 @@
+<footer [style.background-color]="preferenceService.couleurPreferee()">
+
+    <p>&copy; Angulacte</p>
+    <label for="couleur">Choisir une couleur préférée: </label>
+    <select name="couleur" [(ngModel)]="preferenceService.couleurPreferee">
+
+        @for(couleurItem of preferenceService.CSS_COLOR_NAMES | keyvalue ; track couleurItem ){
+            <option [value]="couleurItem.value">{{couleurItem.key}}</option>
+        }
+
+    </select>
+{{preferenceService.couleurPreferee()}}
+</footer>

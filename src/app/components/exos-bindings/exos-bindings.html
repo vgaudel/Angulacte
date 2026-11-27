@@ -1,0 +1,50 @@
+<h2>Exercices sur les bindings et le control flow.</h2>
+
+<select [(ngModel)]="selectedSousComposant">
+    @for(scItem of sousComposants; track $index){
+        <option>{{scItem}}</option>
+    }@empty{
+        <option>Pas de composant à sélectionner</option>
+    }
+</select>
+
+{{selectedSousComposant}}
+
+@switch(selectedSousComposant){
+    @case('eb01-interpolation'){
+        <cam-eb01-interpolation/>
+    }   
+    @case('eb02-property'){
+        <cam-eb02-property/>
+    }   
+    @case('eb03-classes'){
+        <cam-eb03-classes/>
+    }   
+    @case("eb04-styles"){
+        <cam-eb04-styles/>
+    }
+    @case("eb05-events"){ 
+        <cam-eb05-events/>
+    }
+    @case("eb06-twoway"){
+        <cam-eb06-twoway/>
+    }
+    @case("eb07-if"){
+        <cam-eb07-if/>
+    }
+    @case("eb08-for"){
+        <cam-eb08-for/>
+    }
+    @case("eb09-switch"){
+        <cam-eb09-switch/>
+    }
+    @case("eb10-combine"){
+        <cam-eb10-combine/>
+    }
+    @default {
+        <p>Aucun composant sélectionné</p>
+    }
+}
+
+
+ 
